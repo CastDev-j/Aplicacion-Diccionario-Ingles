@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Dictionary web app</title>
+</head>
+
+<body>
+
+  <div id="body">
+    <div id="card">
+      <div id="header-card">
+        <span id="logo"><img src="assets/images/open-book.png" alt=""></span>
+
+        <div class="right">
+
+          <span id="select-font">
+            <div id="actual-font"> <span id="text-family-font">Poppins</span> <img id="arrow-font"
+                src="assets/images/icon-arrow-down.svg" alt=""></div>
+            <div id="all-fonts">
+              <div class="option-font option-style" id="sans-serif">Sans Serif</div>
+              <div class="option-font option-style" id="poppins">Poppins</div>
+              <div class="option-font option-style" id="monospace">Mono</div>
+            </div>
+          </span>
+
+          <input type="checkbox" name="dark-mode" id="checkbox-darkmode" style="display: none;">
+          <label for="checkbox-darkmode" id="checkbox-darkmode-label">
+            <div id="box-mode">
+              <span id="contain-ball"><span id="ball"></span></span>
+              <span id="dark-mode-icon"><img src="assets/images/icon-moon.svg" alt=""></span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <div id="search-input">
+        <span id="search-icon"><img src="assets/images/icon-search.svg" alt="" id="search-word"></span>
+        <input type="text" name="word" id="word" placeholder="Search for any word..." value="">
+        <div id="error">Whoops, can't be empty...</div>    
+      </div>
+
+      <div id="word-info">
+
+    </div>
+
+
+
+    
+    <div id="word-info-error"> 
+      <div class="title">No Definitions Found</div>
+      <div class="emoji">(╥﹏╥)</div>
+      <div class="message">Sorry pal, we couldn't find definitions for the word you were looking for.","resolution":"You can try the search again at later time or head to the web instead.</div>
+    </div>
+
+    <div id="load-data">
+      <i class="load-ball ball-1"></i>
+      <i class="load-ball ball-2"></i>
+      <i class="load-ball ball-3"></i>
+    </div>
+
+  </div>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+
+</html>
